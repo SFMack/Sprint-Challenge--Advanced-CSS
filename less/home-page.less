@@ -15,6 +15,21 @@
 	}
 
 	.space-images {
+		@media (max-width: 500px) {
+			margin: 2rem 0 0 0;
+
+			.sky {
+				display: none;
+			}
+			.launch {
+				display: none;
+			}
+			.blast {
+				width: 93%;
+				margin: 0 auto;
+			}
+		}
+
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
@@ -40,6 +55,12 @@
 	}
 
 	.walk {
+		@media (max-width: 500px) {
+			margin-top: 1rem;
+			padding: 20px 10px;
+			flex-direction: column;
+		}
+
 		margin-top: 60px;
 		border-top: 1px solid @main-border-color;
 		padding: 50px 60px;
@@ -47,6 +68,10 @@
 		justify-content: center;
 
 		.walk-text {
+			@media (max-width: 500px) {
+				width: 100%;
+			}
+
 			width: 50%;
 
 			h3 {
@@ -64,10 +89,20 @@
 		}
 
 		.walk-img {
+			@media (max-width: 500px) {
+				width: 100vw;
+				order: -1;
+				margin: 0 auto;
+			}
+
 			width: 46%;
 			margin-left: 4%;
 
 			img {
+				@media (max-width: 500px) {
+					width: 95%;
+				}
+
 				width: 100%;
 				height: auto;
 				border-radius: 10px;

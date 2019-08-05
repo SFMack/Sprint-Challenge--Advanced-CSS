@@ -1,23 +1,39 @@
 // Navigation code here
 nav {
+	@media (max-width: 500px) {
+		width: 100%;
+	}
+
 	background-color: @wild-sand;
 	width: 80%;
 	margin: 0 auto;
 	padding: 1rem 0;
 
 	h1 {
+		@media (max-width: 500px) {
+			.font(3rem);
+		}
+
 		text-align: center;
-		.large(4rem);
+		.font(4rem);
 		margin-bottom: 1rem;
 	}
 
 	ul {
+		@media screen {
+			.font(1.65rem);
+		}
+
 		width: 100%;
-		.large(2rem);
+		.font(2rem);
 		.flex(flex);
 		.lineUp(center);
 
 		a {
+			@media (max-width: 500px) {
+				padding: 2px 6px;
+			}
+
 			color: @ebony-clay;
 			padding: 14px 25px;
 			text-align: center;
