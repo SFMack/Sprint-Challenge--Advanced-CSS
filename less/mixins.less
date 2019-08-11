@@ -1,1 +1,41 @@
-// Mixins Here
+.lineUp (@where) {
+	justify-content: @where;
+}
+
+.font (@large) {
+	font-size: @large;
+}
+
+.flex (@display) {
+	display: @display;
+}
+
+.roundedCorners (@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+.btn (@font-size, @bg-color, @bgHover, @hover-text-color) {
+	background-color: @bg-color;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: @font-size;
+	font-weight: bold;
+	padding: 12px 16px;
+	text-decoration: none;
+
+	&:hover {
+		background-color: @bgHover;
+		color: @hover-text-color;
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}

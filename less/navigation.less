@@ -1,1 +1,44 @@
 // Navigation code here
+nav {
+	@media (@phone) {
+		width: 100%;
+	}
+
+	background-color: @wild-sand;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1rem 0;
+
+	h1 {
+		@media (@phone) {
+			.font(3rem);
+		}
+
+		text-align: center;
+		.font(4rem);
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		@media screen {
+			.font(1.65rem);
+		}
+
+		width: 100%;
+		.font(2rem);
+		.flex(flex);
+		.lineUp(center);
+
+		a {
+			@media (@phone) {
+				padding: 2px 6px;
+			}
+
+			color: @ebony-clay;
+			padding: 14px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+	}
+}

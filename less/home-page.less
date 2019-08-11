@@ -1,75 +1,118 @@
 // Home Content
 
 .home {
+	.intro {
+		h2 {
+			padding: 15px;
+		}
 
-  .intro {
+		p {
+			padding: 0 15px;
+		}
+		img {
+			.roundedCorners(5px);
+		}
+	}
 
-    h2 {
-      padding: 15px;
-    }
+	.space-images {
+		@media (@phone) {
+			margin: 2rem 0 0 0;
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
+			.sky {
+				display: none;
+			}
+			.launch {
+				display: none;
+			}
+			.blast {
+				width: 93%;
+				margin: 0 auto;
+			}
+		}
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
+		img {
+			width: 28%;
+			margin: 20px 2.5%;
+			border-radius: 20px;
+			height: 100%;
+		}
+	}
 
-  .visit-planets {
-    padding: 15px;
+	.visit-planets {
+		padding: 15px;
 
-    h3 {
-      margin-top: 11px;
-    }
+		h3 {
+			margin-top: 11px;
+		}
 
-    p {
-      margin-top: 13px;
-    }
-  }
+		p {
+			margin-top: 13px;
+		}
+	}
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+	.walk {
+		@media (@phone) {
+			margin-top: 1rem;
+			padding: 20px 10px;
+			flex-direction: column;
+		}
 
-    .walk-text {
-      width: 50%;
+		margin-top: 60px;
+		border-top: 1px solid @main-border-color;
+		padding: 50px 60px;
+		display: flex;
+		justify-content: center;
 
-      h3 {
-        margin-bottom: 10px;
-      }
+		.walk-text {
+			@media (@phone) {
+				width: 100%;
+				margin-top: 1rem;
+			}
 
-      p {
-        margin-bottom: 26px;
-      }
+			width: 50%;
 
-      .btn {
-      }
-    }
+			h3 {
+				margin-bottom: 10px;
+			}
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-}// home
+			p {
+				margin-bottom: 26px;
+			}
+
+			.btn {
+				@media (@phone) {
+					width: 100%;
+					text-align: center;
+				}
+
+				.btn(2rem, @ebony-clay, #fff, @ebony-clay);
+				border: none;
+			}
+		}
+
+		.walk-img {
+			@media (@phone) {
+				width: 100vw;
+				order: -1;
+				margin: 0 auto;
+			}
+
+			width: 46%;
+			margin-left: 4%;
+
+			img {
+				@media (@phone) {
+					width: 95%;
+				}
+
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+			}
+		}
+	}
+} // home
